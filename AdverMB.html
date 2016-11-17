@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <meta httSearchPackageMobilep-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>HENRY 5G: Advertisement Mobile</title>
+    <style type="text/css">
+        body{
+            font-family: 'Rubik';
+        }
+        .AdverMB{
+            text-align: center;
+        }
+        .show{
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <center><h2>Advertisement Mobile</h2></center>
+    <div class="AdverMB">
+        <form action="AdverMb" method="get" class="form-inline">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+              <input type="text" class="form-control" id="custom-search-input" name="search" placeholder="Search Advertisement">
+          </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+</div>
+<br>
+<br>
+<br>
+<div class="show">
+<form class="form-horizontal">
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="id">Advertisement ID :</label>  
+                <div class="col-md-4">
+                    <input id="id"type="text" class="form-control input-md" value="<%=f.getIdAdvert()%>" readonly="" style="background-color: #eee"><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="ex">Explanation Promotion :</label>  
+                <div class="col-md-4">
+                    <input id="ex" type="text" class="form-control input-md" value="<%=f.getComment()%>" readonly=""><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="date">Date :</label>  
+                <div class="col-md-4">
+                    <input id="date" type="text" class="form-control input-md" value="<%=f.getDate()%>" readonly=""><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="detail">Detail Package :</label>  
+                <div class="col-md-4">
+                    <input id="detail" type="text" class="form-control input-md" value="<%=f.getDetailMB()%>" readonly=""><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="bonus">Bonus Package :</label>  
+                <div class="col-md-4">
+                    <input id="bonus" type="text" class="form-control input-md" value="<%=f.getBonusMB()%>" readonly=""><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="price">Price Total :</label>  
+                <div class="col-md-4">
+                    <input id="price" type="text" class="form-control input-md" value="<%=f.getDiscount()%>" readonly=""><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="point">Point :</label>  
+                <div class="col-md-4">
+                    <input id="point" type="text" class="form-control input-md" value="<%=f.getPoint()%>" readonly=""><br>
+                </div>
+            </div>
+            <br>
+</form>
+</div>
+<hr>
+</body>
+</html>

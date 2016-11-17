@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>HENRY 5G: Bill</title>
+    <style type="text/css">
+        body{
+            font-family: 'Rubik';
+        }
+        .bill{
+            margin: auto;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="bill">
+        <center><h2>Total Bill</h2></center>
+        <br>
+        <form action="Product" method="get" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="id">Bill ID :</label>  
+                        <div class="col-md-4">
+                            <input id="id" type="text" class="form-control input-md" value="<%=f.getIdcustbill()%>" readonly="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="fname">First Name :</label>  
+                        <div class="col-md-4">
+                            <input id="fname" type="text" class="form-control input-md" value="<%=f.getFname()%>" readonly="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="lname">Last Name :</label>  
+                        <div class="col-md-4">
+                            <input id="lname" type="text" class="form-control input-md" value="<%=f.getLname()%>" readonly="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="total">Total :</label>  
+                        <div class="col-md-4">
+                            <input id="total" type="text" class="form-control input-md" value="<%=f.getTotal()%>" readonly="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="total">Card Type :</label>  
+                        <div class="col-md-4">
+                            <input id="total" type="text" class="form-control input-md" value="<%=f.getCardtype()%>" readonly="">
+                        </div>
+                    </div>
+            </form>
+    </div>
+
+    <hr>
+</body>
+</html>

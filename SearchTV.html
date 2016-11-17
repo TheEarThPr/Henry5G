@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <meta httSearchPackageMobilep-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>HENRY 5G: Package TV</title>
+    <style type="text/css">
+        body{
+            font-family: 'Rubik';
+        }
+        .searchTV{
+            text-align: center;
+        }
+        .show{
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <center><h2>Package TV</h2></center>
+    <div class="searchTV">
+        <form action="SearchTv" method="get" class="form-inline">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+              <input type="text" class="form-control" id="custom-search-input" name="search" placeholder="Search Package TV">
+          </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+</div>
+<br>
+<br>
+<br>
+<div class="show">
+<form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="id">Package TV ID :</label>  
+                <div class="col-md-4">
+                    <input id="id" name="id" type="text" class="form-control input-md" value="<%=f.getIdPackTV()%>" readonly=""><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="detail">Detail Package TV :</label>  
+                <div class="col-md-4">
+                    <input id="detail" name="detail" type="text" class="form-control input-md" value="<%=f.getDetailTV()%>" readonly=""><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="price">Price :</label>  
+                <div class="col-md-4">
+                    <input id="price" name="price" type="text" class="form-control input-md" value="<%=f.getPriceTV()%>" readonly=""><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="bonus">Bonus :</label>  
+                <div class="col-md-4">
+                    <input id="bonus" name="bonus" type="text" class="form-control input-md" value="<%=f.getBonusTV()%>" readonly=""><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="point">Point :</label>  
+                <div class="col-md-4">
+                    <input id="point" name="point" type="text" class="form-control input-md" value="<%=f.getPoint()%>" readonly=""><br>
+                </div>
+            </div>
+<br>
+</form>
+</div>
+<hr>
+</body>
+</html>
